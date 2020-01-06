@@ -6,7 +6,7 @@ import checkPropTypes from 'check-prop-types';
  * @param {string} attr - Attr identifying data-test attribute
  */
 export const findByAttribute = (wrapper, value) => {
-  return wrapper.find(`[data-test='${value}']`);
+  return wrapper.find(`[data-test-id='${value}']`);
 };
 
 export const checkProp = (component, conformingProps) => {
