@@ -5,4 +5,6 @@ import { App } from './App';
 
 test('renders without an error', () => {
   const wrapper = shallow(<App />);
+
+  expect(wrapper).toBeTruthy();
 });
