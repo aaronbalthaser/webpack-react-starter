@@ -1,5 +1,5 @@
 import React from 'react';
 
-test('renders without error', () => {
+test('renders without an error', () => {
     
 });
