@@ -22,3 +22,11 @@ yarn build OR npm build
 ```
 yarn lint OR npm lint
 ```
+
+## Module Aliases
+
+After adding any new alias to the _moduleAliases in package.json file yarn install must be ran to create the symlinks.
+
+```
+https://github.com/Rush/link-module-alias
+```
