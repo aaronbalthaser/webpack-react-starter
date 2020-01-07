@@ -4,8 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "link-module-alias",
-    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
     "build": "webpack --config webpack/webpack.production.config.js",
     "dev": "webpack-dev-server --config webpack/webpack.development.config.js",
     "test": "jest --watch",
