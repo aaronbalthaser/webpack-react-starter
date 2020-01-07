@@ -2,9 +2,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
+  resolve: {
+    extensions: ['.js', '.json', 'scss'],
+    alias: {
+      components: path.resolve(__dirname, '../src/components'),
+      utils: path.resolve(__dirname, '../test')
+    }
+  },
   module: {
     rules: [
       {
