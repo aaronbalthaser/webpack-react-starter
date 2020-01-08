@@ -18,7 +18,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-remove-object-properties": "1.0.2",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "check-prop-types": "1.1.2",
+    "check-prop-types": "^1.1.2",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "3.2.0",
     "enzyme": "3.11.0",
@@ -32,6 +32,7 @@
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "4.12.0",
     "postcss-loader": "3.0.0",
+    "prop-types": "^15.7.2",
     "raw-loader": "3.1.0",
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
@@ -49,8 +50,14 @@
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
     ],
-    "moduleFileExtensions": ["js"],
-    "moduleDirectories": ["node_modules", "src", "test"],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "test"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
