@@ -9,5 +9,5 @@ test('renders without an error', () => {
   const wrapper = shallow(<App />);
   const component = findByAttribute(wrapper, 'component-app');
 
-  expect(wrapper).toBeTruthy();
+  expect(component).toBeTruthy();
 });
